@@ -1,4 +1,4 @@
-# Shorty
+# [Shorty](https://hohnik.github.io/Shorty/)
 
 Static Webpage, that makes it easier to obtain an overview about all the **shortcuts** a editor, tool or program has.
 
