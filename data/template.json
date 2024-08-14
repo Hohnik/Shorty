@@ -1,0 +1,20 @@
+[
+  "NONE": {
+    "q": {
+      "name": "Macro",
+      "info": "Start recording a macro",
+      "keyColor": "#E6E6FA",
+    },
+  },
+  "CTRL": {},
+  "SHIFT": {},
+  "ALT": {},
+  "CMD": {},
+  "CTRL-SHIFT": {},
+  "CTRL-ALT": {},
+  "CTRL-CMD": {},
+  "SHIFT-ALT": {},
+  "SHIFT-CMD": {},
+  "ALT-CMD": {},
+]
+

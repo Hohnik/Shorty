@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(58, 1fr); /* 15 columns for full keyboard width */
+    max-width: 900px;
+}
+
+.key {
+    background-color: #e6e6fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    grid-column: span 4;
+}
+
+.key.wide {
+    grid-column: span 8;
+}
+
+.key.extra-wide {
+    grid-column: span 20;
+}
+
+/* Specific key positions for ISO layout */
+.key[data-shortcut="Backspace"] {
+    grid-column: 53 / -1;
+}
+
+.key[data-shortcut="Tab"] {
+    grid-column: 1 / span 6;
+}
+
+.key[data-shortcut="Enter"] {
+    grid-column: 56 / -1;
+    grid-row: 2 / span 2;
+}
+
+.key[data-shortcut="Caps Lock"] {
+    grid-column: 1 / span 7;
+}
+
+.key[data-shortcut="Left Shift"] {
+    grid-column: 1 / span 5;
+}
+
+.key[data-shortcut="Right Shift"] {
+    grid-column: 50 / -1;
+}
+
+.key[data-shortcut="Left Ctrl"] {
+    grid-column: 1 / span 6;
+}
+
+.key[data-shortcut="Left Alt"] {
+    grid-column: 7 / span 5;
+}
+
+.key[data-shortcut="Left Cmd"] {
+    grid-column: 12 / span 6;
+}
+
+.key[data-shortcut="Space"] {
+    grid-column: 18 / span 20;
+}
+
+.key[data-shortcut="Right Cmd"] {
+    grid-column: 38 / span 5;
+}
+
+.key[data-shortcut="Right Alt"] {
+    grid-column: 43 / span 4;
+}
+.popup {
+    position: absolute;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.key:hover .popup {
+    display: block;
+}
+
