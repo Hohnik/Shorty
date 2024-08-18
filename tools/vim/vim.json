@@ -1,0 +1,34 @@
+{
+  "KeyQ": {
+    "None": {
+      "symbol": "q",
+      "name": "Macro - record",
+      "info": "Start recording a macro",
+      "color": "#A4C9F4"
+    },
+    "Control": {},
+    "Shift": {
+      "symbol": "Q",
+      "name": "Macro - play",
+      "info": "Activate the last recorded macro",
+      "color": "#A4C9F4"
+    },
+    "Alt": {}
+  },
+  "KeyW": {
+    "None": {
+      "symbol": "w",
+      "name": "Word",
+      "info": "Move the cursor to the beginning of the next word or non-word character",
+      "color": "#C8A2C8"
+    },
+    "Control": {},
+    "Shift": {
+      "symbol": "W",
+      "name": "WORD",
+      "info": "Move the cursor to the beginning of the next word after a whitespace",
+      "color": "#C8A2C8"
+    },
+    "Alt": {}
+  }
+}

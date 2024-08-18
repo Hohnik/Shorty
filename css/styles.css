@@ -1,102 +1,106 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#shortcut-info {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+
+    height: 200px;
+    width: 600px;
 }
 
 .keyboard {
     display: grid;
-    grid-template-columns: repeat(58, 1fr); /* 15 columns for full keyboard width */
-    max-width: 900px;
+    gap: 3px;
+    margin-bottom: 20px;
 }
 
-.key {
-    background-color: #e6e6fa;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    text-align: center;
-    font-size: 14px;
-    position: relative;
-    cursor: pointer;
-    box-sizing: border-box;
+#functionKeys {
+    grid-template-columns: repeat(52, 1fr);
+    width: 520px;
+    margin-right: 60px;
+}
+
+#letterKeys {
+    width: 580px;
+    grid-template-columns: repeat(58, 1fr);
+}
+
+#arrowKeys {
+    grid-template-columns: repeat(3, 1fr);
+    width: 113px;
+    grid-template-areas:
+        ".         ArrowUp   .         "
+        "ArrowLeft ArrowDown ArrowRight";
+}
+#ArrowUp {
+    grid-area: ArrowUp;
+}
+#ArrowLeft {
+    grid-area: ArrowLeft;
+}
+#ArrowDown {
+    grid-area: ArrowDown;
+}
+#ArrowRight {
+    grid-area: ArrowRight;
+}
+
+keyboard-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    height: 25px;
+
     grid-column: span 4;
+
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+
+    font-size: 1.2rem;
 }
 
-.key.wide {
-    grid-column: span 8;
+keyboard-key:hover {
+    background-color: white;
 }
 
-.key.extra-wide {
-    grid-column: span 20;
+#Backspace {
+    grid-column: span 6;
 }
-
-/* Specific key positions for ISO layout */
-.key[data-shortcut="Backspace"] {
-    grid-column: 53 / -1;
+#Tab {
+    grid-column: span 6;
 }
-
-.key[data-shortcut="Tab"] {
-    grid-column: 1 / span 6;
+#Enter {
+    grid-column: 56 / span 3;
+    grid-row: 2 / 4;
 }
-
-.key[data-shortcut="Enter"] {
-    grid-column: 56 / -1;
-    grid-row: 2 / span 2;
+#CapsLock {
+    grid-column: span 7;
 }
-
-.key[data-shortcut="Caps Lock"] {
-    grid-column: 1 / span 7;
+#ShiftLeft {
+    grid-column: span 5;
 }
-
-.key[data-shortcut="Left Shift"] {
-    grid-column: 1 / span 5;
+#ShiftRight {
+    grid-column: span 9;
 }
-
-.key[data-shortcut="Right Shift"] {
-    grid-column: 50 / -1;
+#MetaLeft {
+    grid-column: span 5;
 }
-
-.key[data-shortcut="Left Ctrl"] {
-    grid-column: 1 / span 6;
+#Space {
+    grid-column: span 36;
 }
-
-.key[data-shortcut="Left Alt"] {
-    grid-column: 7 / span 5;
+#MetaRight {
+    grid-column: span 5;
 }
-
-.key[data-shortcut="Left Cmd"] {
-    grid-column: 12 / span 6;
-}
-
-.key[data-shortcut="Space"] {
-    grid-column: 18 / span 20;
-}
-
-.key[data-shortcut="Right Cmd"] {
-    grid-column: 38 / span 5;
-}
-
-.key[data-shortcut="Right Alt"] {
-    grid-column: 43 / span 4;
-}
-.popup {
-    position: absolute;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    display: none;
-    white-space: nowrap;
-    z-index: 10;
-}
-
-.key:hover .popup {
-    display: block;
-}
-
