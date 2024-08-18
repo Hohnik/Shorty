@@ -3,7 +3,6 @@ class Key extends HTMLElement {
     super();
     this.infoDisplay = document.getElementById("shortcut-info");
     this.activeModifier = "None";
-    this.lastActiveModifier = "None";
   }
 
   // Call on element creation
@@ -15,6 +14,7 @@ class Key extends HTMLElement {
     });
     this.addEventListener("mouseout", (e) => {
       this.update(e);
+      this.resetColor();
     });
   }
 
@@ -28,6 +28,7 @@ class Key extends HTMLElement {
     document.addEventListener("keyup", (event) => {
       this.update(event);
       if (this.getAttribute("id") !== event.code) return;
+      this.resetColor();
     });
   }
 
@@ -51,7 +52,7 @@ class Key extends HTMLElement {
     this.updateModifierKey(event);
     this.updateShortcutDetails(event);
     this.setKeyLables();
-    this.resetColor();
+    // this.resetColor();
   }
 
   updateModifierKey(event) {
