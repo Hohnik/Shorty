@@ -1,4 +1,154 @@
 {
+  "Escape": {
+    "None": {
+      "symbol": "Esc",
+      "name": "Normal mode",
+      "info": "Cancel the current mode and return to normal mode",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit1": {
+    "None": {
+      "symbol": "1",
+      "name": "Prefix",
+      "info": "Numbers are used as a prefix for motions and commands",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit2": {
+    "None": {
+      "symbol": "2",
+      "name": "Prefix",
+      "info": "Numbers are used as a prefix for motions and commands",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit3": {
+    "None": {
+      "symbol": "3",
+      "name": "Prefix",
+      "info": "Numbers are used as a prefix for motions and commands",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit4": {
+    "None": {
+      "symbol": "4",
+      "name": "Prefix",
+      "info": "Numbers are used as a prefix for motions and commands",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit5": {
+    "None": {
+      "symbol": "5",
+      "name": "Prefix",
+      "info": "Numbers are used as a prefix for motions and commands",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit6": {
+    "None": {
+      "symbol": "6",
+      "name": "Prefix",
+      "info": "Numbers are used as a prefix for motions and commands",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit7": {
+    "None": {
+      "symbol": "7",
+      "name": "Prefix",
+      "info": "Numbers are used as a prefix for motions and commands",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit8": {
+    "None": {
+      "symbol": "8",
+      "name": "Prefix",
+      "info": "Numbers are used as a prefix for motions and commands",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit9": {
+    "None": {
+      "symbol": "9",
+      "name": "Prefix",
+      "info": "Numbers are used as a prefix for motions and commands",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Digit0": {
+    "None": {
+      "symbol": "0",
+      "name": "Start of line",
+      "info": "Move the cursor to the beginning of the line",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Minus": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Equal": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Backspace": {
+    "None": {
+      "symbol": "&#9003;",
+      "name": "Move - back",
+      "info": "Move the cursor one character to the left",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Tab": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
   "KeyQ": {
     "None": {
       "symbol": "q",
@@ -18,7 +168,7 @@
   "KeyW": {
     "None": {
       "symbol": "w",
-      "name": "Word",
+      "name": "Word - forward",
       "info": "Move the cursor to the beginning of the next word or non-word character",
       "color": "#C8A2C8"
     },
@@ -29,6 +179,473 @@
       "info": "Move the cursor to the beginning of the next word after a whitespace",
       "color": "#C8A2C8"
     },
+    "Alt": {}
+  },
+  "KeyE": {
+    "None": {
+      "symbol": "e",
+      "name": "Move - end of word",
+      "info": "Move the cursor to the next end of a word",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyR": {
+    "None": {
+      "symbol": "r",
+      "name": "Replace",
+      "info": "Replace the character under the cursor with the next character typed",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyT": {
+    "None": {
+      "symbol": "t",
+      "name": "Till (Prefix Key)",
+      "info": "Move (t{motion}) the cursor to the character before the next occurrence of a character",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyY": {
+    "None": {
+      "symbol": "z",
+      "name": "Scroll / Fold (Prefix Key)",
+      "info": "z can be used in combination with other keys to perform various actions like scrolling and folding",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyU": {
+    "None": {
+      "symbol": "u",
+      "name": "Undo",
+      "info": "Undo the last change",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyI": {
+    "None": {
+      "symbol": "i",
+      "name": "Insert Mode - before",
+      "info": "Enter insert mode before the cursor",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyO": {
+    "None": {
+      "symbol": "o",
+      "name": "Insert Mode - line below",
+      "info": "Enter insert mode on the line below the cursor",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyP": {
+    "None": {
+      "symbol": "p",
+      "name": "Paste",
+      "info": "Paste the most recently copied or cut text",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "BracketLeft": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "BracketRight": {
+    "None": {
+      "symbol": "+",
+      "name": "Move line down",
+      "info": "Move a line down",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Enter": {
+    "None": {
+      "symbol": "&#9166",
+      "name": "Move line down",
+      "info": "Move a line down",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "CapsLock": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyA": {
+    "None": {
+      "symbol": "a",
+      "name": "Insert Mode - after",
+      "info": "Enter insert mode after the cursor",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyS": {
+    "None": {
+      "symbol": "s",
+      "name": "Substitute{motion} (Operator)",
+      "info": "Delete the motion or text object and enter insert mode",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyD": {
+    "None": {
+      "symbol": "d",
+      "name": "Delete{motion} (Operator)",
+      "info": "Delete a specified motion or text object",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyF": {
+    "None": {
+      "symbol": "f",
+      "name": "Find (Prefix) - forward",
+      "info": "Find (f{letter}) the next occurrence of the search term",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyG": {
+    "None": {
+      "symbol": "g",
+      "name": "Miscellaneous - (Prefix Key)",
+      "info": "The g key can be used as a prefix key to access various commands, its functionality is context dependent. It gets combined with other keys to perform various actions like movement, file operations, text manipulation, etc.",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyH": {
+    "None": {
+      "symbol": "h",
+      "name": "Move Left",
+      "info": "Move the cursor to the left",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyJ": {
+    "None": {
+      "symbol": "j",
+      "name": "Move Down",
+      "info": "Move the cursor to the left",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyK": {
+    "None": {
+      "symbol": "k",
+      "name": "Move Up",
+      "info": "Move the cursor to the left",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyL": {
+    "None": {
+      "symbol": "l",
+      "name": "Move Right",
+      "info": "Move the cursor to the Right",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Semicolon": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Quote": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Backslash": {
+    "None": {
+      "symbol": "#",
+      "name": "Search - backwards",
+      "info": "Search for the word under the cursor backwards through the file",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "ShiftLeft": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Backquote": {
+    "None": {
+      "symbol": "<",
+      "name": "Outdent (Operator)",
+      "info": "Outdents the current line by one tab stop",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyZ": {
+    "None": {
+      "symbol": "y",
+      "name": "Yank (Operator)",
+      "info": "Copy the next movement or text object",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyX": {
+    "None": {
+      "symbol": "x",
+      "name": null,
+      "info": null,
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyC": {
+    "None": {
+      "symbol": "c",
+      "name": "Change (Operator)",
+      "info": "Change the text object under the cursor",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyV": {
+    "None": {
+      "symbol": "v",
+      "name": "Visual Mode",
+      "info": "Enter visual mode to select/highlight text",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyB": {
+    "None": {
+      "symbol": "b",
+      "name": "Word - backwards",
+      "info": "Move to the beginning of the previous word",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "KeyN": {
+    "None": {
+      "symbol": "n",
+      "name": "Search - forwards",
+      "info": "Cicle through the search results forwards",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {
+      "symbol": "N",
+      "name": "Search - backwards",
+      "info": "Cicle through the search results backwards",
+      "color": null
+    },
+    "Alt": {}
+  },
+  "KeyM": {
+    "None": {
+      "symbol": "m",
+      "name": "Mark (Prefix Key)",
+      "info": "Mark (m{letter}) the current position in the file so you can easily return to this position later with '{letter} ",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Comma": {
+    "None": {
+      "symbol": ",",
+      "name": "Repeat movement",
+      "info": "Repeat the last movement command in the same direction",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Period": {
+    "None": {
+      "symbol": ".",
+      "name": "Repeat last change",
+      "info": "Repeat the last change command",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Slash": {
+    "None": {
+      "symbol": "-",
+      "name": "Move up",
+      "info": "Move the cursor up one line",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "ShiftRight": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "ControlLeft": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "AltLeft": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "MetaLeft": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "Space": {
+    "None": {
+      "symbol": "Space",
+      "name": "Move characterwise",
+      "info": "Move the cursor one character to the right",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "MetaRight": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "AltRight": {
+    "None": {},
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "ArrowLeft": {
+    "None": {
+      "symbol": "&larr;",
+      "name": "Move left",
+      "info": "Move the cursor one character to the left",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "ArrowDown": {
+    "None": {
+      "symbol": "&darr;",
+      "name": "Move down",
+      "info": "Move the cursor down one line",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "ArrowUp": {
+    "None": {
+      "symbol": "&uarr;",
+      "name": "Move up",
+      "info": "Move the cursor up one line",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
+    "Alt": {}
+  },
+  "ArrowRight": {
+    "None": {
+      "symbol": "&rarr;",
+      "name": "Move right",
+      "info": "Move the cursor one character to the right",
+      "color": null
+    },
+    "Control": {},
+    "Shift": {},
     "Alt": {}
   }
 }
