@@ -114,7 +114,7 @@
       "symbol": "0",
       "name": "Start of line",
       "info": "Move the cursor to the beginning of the line",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -137,7 +137,7 @@
       "symbol": "&#9003;",
       "name": "Move - back",
       "info": "Move the cursor one character to the left",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -154,7 +154,7 @@
       "symbol": "q",
       "name": "Macro - record",
       "info": "Start recording a macro",
-      "color": "#A4C9F4"
+      "color": null
     },
     "Control": {},
     "Shift": {
@@ -170,14 +170,14 @@
       "symbol": "w",
       "name": "Word - forward",
       "info": "Move the cursor to the beginning of the next word or non-word character",
-      "color": "#C8A2C8"
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {
       "symbol": "W",
       "name": "WORD",
       "info": "Move the cursor to the beginning of the next word after a whitespace",
-      "color": "#C8A2C8"
+      "color": "LightPink"
     },
     "Alt": {}
   },
@@ -186,7 +186,7 @@
       "symbol": "e",
       "name": "Move - end of word",
       "info": "Move the cursor to the next end of a word",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -197,7 +197,7 @@
       "symbol": "r",
       "name": "Replace",
       "info": "Replace the character under the cursor with the next character typed",
-      "color": null
+      "color": "#D8BFD8"
     },
     "Control": {},
     "Shift": {},
@@ -208,7 +208,7 @@
       "symbol": "t",
       "name": "Till (Prefix Key)",
       "info": "Move (t{motion}) the cursor to the character before the next occurrence of a character",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -241,7 +241,7 @@
       "symbol": "i",
       "name": "Insert Mode - before",
       "info": "Enter insert mode before the cursor",
-      "color": null
+      "color": "#A4C9F4"
     },
     "Control": {},
     "Shift": {},
@@ -252,7 +252,7 @@
       "symbol": "o",
       "name": "Insert Mode - line below",
       "info": "Enter insert mode on the line below the cursor",
-      "color": null
+      "color": "#A4C9F4"
     },
     "Control": {},
     "Shift": {},
@@ -263,7 +263,7 @@
       "symbol": "p",
       "name": "Paste",
       "info": "Paste the most recently copied or cut text",
-      "color": null
+      "color": "#D8BFD8"
     },
     "Control": {},
     "Shift": {},
@@ -280,7 +280,7 @@
       "symbol": "+",
       "name": "Move line down",
       "info": "Move a line down",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -291,7 +291,7 @@
       "symbol": "&#9166",
       "name": "Move line down",
       "info": "Move a line down",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -308,7 +308,7 @@
       "symbol": "a",
       "name": "Insert Mode - after",
       "info": "Enter insert mode after the cursor",
-      "color": null
+      "color": "#A4C9F4"
     },
     "Control": {},
     "Shift": {},
@@ -319,7 +319,7 @@
       "symbol": "s",
       "name": "Substitute{motion} (Operator)",
       "info": "Delete the motion or text object and enter insert mode",
-      "color": null
+      "color": "#D8BFD8"
     },
     "Control": {},
     "Shift": {},
@@ -330,7 +330,7 @@
       "symbol": "d",
       "name": "Delete{motion} (Operator)",
       "info": "Delete a specified motion or text object",
-      "color": null
+      "color": "#D8BFD8"
     },
     "Control": {},
     "Shift": {},
@@ -341,7 +341,7 @@
       "symbol": "f",
       "name": "Find (Prefix) - forward",
       "info": "Find (f{letter}) the next occurrence of the search term",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -363,7 +363,7 @@
       "symbol": "h",
       "name": "Move Left",
       "info": "Move the cursor to the left",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -374,7 +374,7 @@
       "symbol": "j",
       "name": "Move Down",
       "info": "Move the cursor to the left",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -385,7 +385,7 @@
       "symbol": "k",
       "name": "Move Up",
       "info": "Move the cursor to the left",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -396,7 +396,7 @@
       "symbol": "l",
       "name": "Move Right",
       "info": "Move the cursor to the Right",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -447,7 +447,7 @@
       "symbol": "y",
       "name": "Yank (Operator)",
       "info": "Copy the next movement or text object",
-      "color": null
+      "color": "#D8BFD8"
     },
     "Control": {},
     "Shift": {},
@@ -456,9 +456,9 @@
   "KeyX": {
     "None": {
       "symbol": "x",
-      "name": null,
-      "info": null,
-      "color": null
+      "name": "Delete",
+      "info": "Delete the character under the cursor",
+      "color": "#D8BFD8"
     },
     "Control": {},
     "Shift": {},
@@ -469,7 +469,7 @@
       "symbol": "c",
       "name": "Change (Operator)",
       "info": "Change the text object under the cursor",
-      "color": null
+      "color": "#D8BFD8"
     },
     "Control": {},
     "Shift": {},
@@ -491,7 +491,7 @@
       "symbol": "b",
       "name": "Word - backwards",
       "info": "Move to the beginning of the previous word",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -529,7 +529,7 @@
       "symbol": ",",
       "name": "Repeat movement",
       "info": "Repeat the last movement command in the same direction",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -540,7 +540,7 @@
       "symbol": ".",
       "name": "Repeat last change",
       "info": "Repeat the last change command",
-      "color": null
+      "color": "#D8BFD8"
     },
     "Control": {},
     "Shift": {},
@@ -551,7 +551,7 @@
       "symbol": "-",
       "name": "Move up",
       "info": "Move the cursor up one line",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -609,7 +609,7 @@
       "symbol": "&larr;",
       "name": "Move left",
       "info": "Move the cursor one character to the left",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -620,7 +620,7 @@
       "symbol": "&darr;",
       "name": "Move down",
       "info": "Move the cursor down one line",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -631,7 +631,7 @@
       "symbol": "&uarr;",
       "name": "Move up",
       "info": "Move the cursor up one line",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},
@@ -642,7 +642,7 @@
       "symbol": "&rarr;",
       "name": "Move right",
       "info": "Move the cursor one character to the right",
-      "color": null
+      "color": "LightPink"
     },
     "Control": {},
     "Shift": {},

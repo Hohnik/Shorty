@@ -3,6 +3,7 @@ class Key extends HTMLElement {
     super();
     this.infoDisplay = document.getElementById("shortcut-info");
     this.activeModifier = "None";
+    this.pressed = [];
   }
 
   // Call on element creation
@@ -10,25 +11,21 @@ class Key extends HTMLElement {
     this.registerKeyListeners();
     this.addEventListener("mouseover", (e) => {
       this.update(e);
-      this.setActiveColor();
     });
     this.addEventListener("mouseout", (e) => {
       this.update(e);
-      this.resetColor();
     });
   }
 
   registerKeyListeners() {
-    document.addEventListener("keydown", (event) => {
-      this.update(event);
-      if (this.getAttribute("id") !== event.code) return;
-      this.setActiveColor(event);
+    document.addEventListener("keydown", (e) => {
+      this.pressed.push(e.code);
+      this.update(e);
     });
 
-    document.addEventListener("keyup", (event) => {
-      this.update(event);
-      if (this.getAttribute("id") !== event.code) return;
-      this.resetColor();
+    document.addEventListener("keyup", (e) => {
+      this.pressed = this.pressed.filter((key) => key !== e.code);
+      this.update(e);
     });
   }
 
@@ -43,7 +40,8 @@ class Key extends HTMLElement {
         if (newValue == null) break;
         this.shortcuts = JSON.parse(newValue);
         this.setKeyLables();
-        this.resetColor();
+        this.updateColor(new KeyboardEvent("keydown"));
+        console.log("attribute changed");
         break;
     }
   }
@@ -52,7 +50,7 @@ class Key extends HTMLElement {
     this.updateModifierKey(event);
     this.updateShortcutDetails(event);
     this.setKeyLables();
-    // this.resetColor();
+    this.updateColor(event);
   }
 
   updateModifierKey(event) {
@@ -82,12 +80,17 @@ class Key extends HTMLElement {
       `;
   }
 
-  setActiveColor() {
-    this.style.backgroundColor = "lightpink";
-  }
+  updateColor(e) {
+    this.style.backgroundColor = this.shortcuts?.[this.activeModifier]?.color || "white";
+    this.style.borderColor = "black";
 
-  resetColor() {
-    this.style.backgroundColor = this.shortcuts?.[this.activeModifier].color || "white";
+    if (e.type == "mouseover") this.style.borderColor = "red";
+    if (this.id == e.code) {
+      this.pressed.forEach((key) => {
+        const elem = document.getElementById(key);
+        elem.style.borderColor = "red";
+      });
+    }
   }
 
   setKeyLables() {
