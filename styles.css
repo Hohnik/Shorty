@@ -9,15 +9,15 @@
 
   --size-desktop: 1140px;
 
-  --color-primary: #1db954;
-  --color-primary-light: #1ece5b;
+  --color-primary: #1d3ab9;
+  --color-primary-light: #2a4de6;
   --color-black: rgb(0, 0, 0);
   --color-darkest: rgb(19, 19, 19);
   --color-darker: rgb(29, 29, 29);
   --color-dark: rgb(37, 37, 37);
   --color-grey-dark: rgb(73, 73, 73);
   --color-grey: rgb(170, 170, 170);
-  --color-white: #fdfdfd;
+  --color-white: #e6e6e6;
 
   --font-size-xl: 36px;
   --font-size-l: 22px;
@@ -51,6 +51,8 @@ body {
   color: var(--color-white);
   width: 100%;
   max-width: var(--size-desktop);
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
 }
 
 h1,
@@ -62,6 +64,10 @@ h6,
 p,
 a {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:visited {
@@ -94,6 +100,7 @@ p {
   font-size: var(--font-size-s);
   line-height: 130%;
 }
+
 a,
 button {
   font-size: var(--font-size-m);
@@ -121,11 +128,41 @@ nav > ul {
   column-gap: var(--spacing-xs);
 }
 
+section {
+  width: 100%;
+  background-color: var(--color-darkest);
+  border-radius: var(--border-radius-l);
+  padding: var(--spacing-m);
+}
+
 header {
   display: flex;
   flex-direction: column;
+  row-gap: var(--spacing-l);
   align-items: center;
   padding: var(--spacing-xl) var(--spacing-s) !important;
+}
+
+#hero-title {
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+#hero-cta {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-s);
+  align-items: center;
+}
+
+#hero-tools-suggestion {
+  display: flex;
+  column-gap: var(--spacing-s);
+}
+
+#keyboard-img {
+  width: 80%;
+  align-self: center;
 }
 
 main {
@@ -136,31 +173,30 @@ main {
   margin: var(--spacing-xs) 0;
 }
 
-header,
 section {
-  width: 100%;
-  background-color: var(--color-darkest);
-  border-radius: var(--border-radius-l);
-  padding: var(--spacing-m);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-m);
 }
 
 footer {
   display: flex;
   justify-content: center;
+  margin-top: var(--spacing-l);
   width: 100vw;
-  background-color: var(--color-grey-dark);
+  background-color: var(--color-darkest);
 }
 
 footer > div {
   width: 100%;
   max-width: var(--size-desktop);
+  padding: var(--spacing-m);
 }
 
 /*
   START BUTTONS
 */
 .link-button {
-  text-decoration: none;
   background-color: var(--color-darker);
   padding: var(--spacing-xs) var(--spacing-s);
   border-radius: var(--border-radius-full);
@@ -193,4 +229,60 @@ footer > div {
 }
 /*
   END BUTTONS
+*/
+
+/*
+  START TOOLS SECTION
+*/
+#tools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: var(--spacing-s);
+  row-gap: var(--spacing-m);
+}
+
+.tool {
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--spacing-s);
+  background-color: var(--color-darker);
+  border-radius: var(--border-radius-m);
+  padding: var(--spacing-s) var(--spacing-m) var(--spacing-m) var(--spacing-s);
+}
+
+.tool h3 {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+}
+
+.tool p {
+  font-size: var(--font-size-s);
+  line-height: 130%;
+  font-weight: var(--font-weight-medium);
+}
+
+.tool:hover {
+  background-color: var(--color-dark);
+}
+
+.tool-logo {
+  height: 75px;
+  border-radius: var(--border-radius-m);
+}
+
+.tool-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-xxs);
+}
+
+.tool-name {
+  padding-top: var(--spacing-xxs);
+}
+
+.tool-description {
+  color: var(--color-grey);
+}
+/*
+  END TOOLS SECTION
 */
