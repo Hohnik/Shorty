@@ -2,6 +2,9 @@
 Static Webpage, that makes it easier to obtain an overview about all the **shortcuts** a editor, tool or program has.
 Its currently built for a **Mac ISO QWERTZ** layout.
 
+## Technologies
+Python, Flask, HTMX
+
 ## The keyboard
 A row is 14.5x the width of a letter key.
 

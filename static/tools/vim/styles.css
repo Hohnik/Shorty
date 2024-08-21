@@ -1,0 +1,107 @@
+main {
+    displayjk: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shortcut-info {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--color-darker);
+
+    font-size: var(--font-size-l);
+
+    height: 300px;
+    width: 900px;
+}
+
+.keyboard {
+    display: grid;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+#functionKeys {
+    grid-template-columns: repeat(52, 1fr);
+    width: 807px;
+    margin-right: 93px;
+}
+
+#letterKeys {
+    width: 900px;
+    grid-template-columns: repeat(58, 1fr);
+}
+
+#arrowKeys {
+    grid-template-columns: repeat(3, 1fr);
+    width: 200px;
+    grid-template-areas:
+        ".         ArrowUp   .         "
+        "ArrowLeft ArrowDown ArrowRight";
+}
+#ArrowUp {
+    grid-area: ArrowUp;
+}
+#ArrowLeft {
+    grid-area: ArrowLeft;
+}
+#ArrowDown {
+    grid-area: ArrowDown;
+}
+#ArrowRight {
+    grid-area: ArrowRight;
+}
+
+key-comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    height: 50px;
+
+    grid-column: span 4;
+
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+
+    font-size: 1.2rem;
+}
+
+key-comp:hover {
+    background-color: transparent;
+}
+
+#Backspace {
+    grid-column: span 6;
+}
+#Tab {
+    grid-column: span 6;
+}
+#Enter {
+    grid-column: 56 / span 3;
+    grid-row: 2 / 4;
+}
+#CapsLock {
+    grid-column: span 7;
+}
+#ShiftLeft {
+    grid-column: span 5;
+}
+#ShiftRight {
+    grid-column: span 9;
+}
+#MetaLeft {
+    grid-column: span 5;
+}
+#Space {
+    grid-column: span 36;
+}
+#MetaRight {
+    grid-column: span 5;
+}

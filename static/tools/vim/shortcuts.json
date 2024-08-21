@@ -134,7 +134,7 @@
   },
   "Backspace": {
     "None": {
-      "symbol": "&#9003;",
+      "symbol": "←",
       "name": "Move - back",
       "info": "Move the cursor one character to the left",
       "color": "LightPink"
@@ -288,7 +288,7 @@
   },
   "Enter": {
     "None": {
-      "symbol": "&#9166",
+      "symbol": "↵",
       "name": "Move line down",
       "info": "Move a line down",
       "color": "LightPink"
@@ -606,7 +606,7 @@
   },
   "ArrowLeft": {
     "None": {
-      "symbol": "&larr;",
+      "symbol": "←",
       "name": "Move left",
       "info": "Move the cursor one character to the left",
       "color": "LightPink"
@@ -617,7 +617,7 @@
   },
   "ArrowDown": {
     "None": {
-      "symbol": "&darr;",
+      "symbol": "↓",
       "name": "Move down",
       "info": "Move the cursor down one line",
       "color": "LightPink"
@@ -628,7 +628,7 @@
   },
   "ArrowUp": {
     "None": {
-      "symbol": "&uarr;",
+      "symbol": "↑",
       "name": "Move up",
       "info": "Move the cursor up one line",
       "color": "LightPink"
@@ -639,7 +639,7 @@
   },
   "ArrowRight": {
     "None": {
-      "symbol": "&rarr;",
+      "symbol": "→",
       "name": "Move right",
       "info": "Move the cursor one character to the right",
       "color": "LightPink"

@@ -1,0 +1,25 @@
+{% block header %}
+<header>
+    <h1 id="hero-title">Find every shortcut<br />for anything.</h1>
+    <div id="hero-cta">
+        <h2>Start now with</h2>
+        <ul id="hero-tools-suggestion">
+            <li>
+                <a href="{{ url_for('vim') }}">
+                    <img
+                        src="{{ url_for('static', filename='assets/images/vim.jpeg') }}"
+                        class="tool-logo"
+                /></a>
+            </li>
+            <li>
+                <a href="{{ url_for('arc') }}">
+                    <img
+                        src="{{ url_for('static', filename='assets/images/arc.jpeg') }}"
+                        class="tool-logo"
+                /></a>
+            </li>
+        </ul>
+    </div>
+    <img src="{{ url_for('static', filename='assets/images/keyboard.png') }}" id="keyboard-img" />
+</header>
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block title %} Vim Shortcuts {% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='tools/vim/styles.css') }}" />
+{% endblock %}
+
+{% block content %}
+<div id="shortcut-info">Hover over a key to see its shortcut info.</div>
+<div id="functionKeys" class="keyboard">
+    <key-comp id="Escape"></key-comp>
+    <key-comp id="F1"></key-comp>
+    <key-comp id="F2"></key-comp>
+    <key-comp id="F3"></key-comp>
+    <key-comp id="F4"></key-comp>
+    <key-comp id="F5"></key-comp>
+    <key-comp id="F6"></key-comp>
+    <key-comp id="F7"></key-comp>
+    <key-comp id="F8"></key-comp>
+    <key-comp id="F9"></key-comp>
+    <key-comp id="F10"></key-comp>
+    <key-comp id="F11"></key-comp>
+    <key-comp id="F12"></key-comp>
+</div>
+
+<div id="letterKeys" class="keyboard">
+    <key-comp id="IntlBackslash"></key-comp>
+    <key-comp id="Digit1"></key-comp>
+    <key-comp id="Digit2"></key-comp>
+    <key-comp id="Digit3"></key-comp>
+    <key-comp id="Digit4"></key-comp>
+    <key-comp id="Digit5"></key-comp>
+    <key-comp id="Digit6"></key-comp>
+    <key-comp id="Digit7"></key-comp>
+    <key-comp id="Digit8"></key-comp>
+    <key-comp id="Digit9"></key-comp>
+    <key-comp id="Digit0"></key-comp>
+    <key-comp id="Minus"></key-comp>
+    <key-comp id="Equal"></key-comp>
+    <key-comp id="Backspace"></key-comp>
+    <key-comp id="Tab"></key-comp>
+    <key-comp id="KeyQ"></key-comp>
+    <key-comp id="KeyW"></key-comp>
+    <key-comp id="KeyE"></key-comp>
+    <key-comp id="KeyR"></key-comp>
+    <key-comp id="KeyT"></key-comp>
+    <key-comp id="KeyY"></key-comp>
+    <key-comp id="KeyU"></key-comp>
+    <key-comp id="KeyI"></key-comp>
+    <key-comp id="KeyO"></key-comp>
+    <key-comp id="KeyP"></key-comp>
+    <key-comp id="BracketLeft"></key-comp>
+    <key-comp id="BracketRight"></key-comp>
+    <key-comp id="Enter"></key-comp>
+    <key-comp id="CapsLock"></key-comp>
+    <key-comp id="KeyA"></key-comp>
+    <key-comp id="KeyS"></key-comp>
+    <key-comp id="KeyD"></key-comp>
+    <key-comp id="KeyF"></key-comp>
+    <key-comp id="KeyG"></key-comp>
+    <key-comp id="KeyH"></key-comp>
+    <key-comp id="KeyJ"></key-comp>
+    <key-comp id="KeyK"></key-comp>
+    <key-comp id="KeyL"></key-comp>
+    <key-comp id="Semicolon"></key-comp>
+    <key-comp id="Quote"></key-comp>
+    <key-comp id="Backslash"></key-comp>
+    <!-- <key-comp id="Enter"></key-comp> -->
+    <key-comp id="ShiftLeft"></key-comp>
+    <key-comp id="Backquote"></key-comp>
+    <key-comp id="KeyZ"></key-comp>
+    <key-comp id="KeyX"></key-comp>
+    <key-comp id="KeyC"></key-comp>
+    <key-comp id="KeyV"></key-comp>
+    <key-comp id="KeyB"></key-comp>
+    <key-comp id="KeyN"></key-comp>
+    <key-comp id="KeyM"></key-comp>
+    <key-comp id="Comma"></key-comp>
+    <key-comp id="Period"></key-comp>
+    <key-comp id="Slash"></key-comp>
+    <key-comp id="ShiftRight"></key-comp>
+    <key-comp id="ControlLeft"></key-comp>
+    <key-comp id="AltLeft"></key-comp>
+    <key-comp id="MetaLeft"></key-comp>
+    <key-comp id="Space"></key-comp>
+    <key-comp id="MetaRight"></key-comp>
+    <key-comp id="AltRight"></key-comp>
+</div>
+
+<div id="arrowKeys" class="keyboard">
+    <key-comp id="ArrowLeft"></key-comp>
+    <key-comp id="ArrowDown"></key-comp>
+    <key-comp id="ArrowUp"></key-comp>
+    <key-comp id="ArrowRight"></key-comp>
+</div>
+
+<script type="module" src="{{ url_for('static', filename='components/key-comp.js')}}"></script>
+<script src="{{ url_for('static', filename='tools/vim/script.js')}}"></script>
+{% endblock %}
