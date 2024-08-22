@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+
+  --size-desktop: 1140px;
+
+  --color-primary: #1d3ab9;
+  --color-primary-light: #2a4de6;
+  --color-black: rgb(0, 0, 0);
+  --color-darkest: rgb(19, 19, 19);
+  --color-darker: rgb(29, 29, 29);
+  --color-dark: rgb(37, 37, 37);
+  --color-grey-dark: rgb(73, 73, 73);
+  --color-grey: rgb(170, 170, 170);
+  --color-white: #e6e6e6;
+
+  --font-size-xl: 36px;
+  --font-size-l: 22px;
+  --font-size-m: 17px;
+  --font-size-s: 14px;
+
+  --font-weight-extra-bold: 900;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-s: 16px;
+  --spacing-m: 32px;
+  --spacing-l: 64px;
+  --spacing-xl: 128px;
+  --spacing-xxl: 256px;
+
+  --border-radius-s: 4px;
+  --border-radius-m: 8px;
+  --border-radius-l: 16px;
+  --border-radius-full: 9999px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--color-white);
+  width: 100%;
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  line-height: 100%;
+  font-weight: var(--font-weight-extra-bold);
+}
+
+h2 {
+  font-size: var(--font-size-l);
+  line-height: 125%;
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+}
+
+h4 {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  font-size: var(--font-size-s);
+  line-height: 130%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-white);
+}
+
+a,
+button {
+  color: var(--color-white);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

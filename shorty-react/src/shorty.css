@@ -1,0 +1,139 @@
+.max-width {
+  max-width: var(--size-desktop);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--spacing-s);
+}
+
+nav > ul {
+  display: flex;
+  column-gap: var(--spacing-xs);
+}
+
+section {
+  width: 100%;
+  background-color: var(--color-darkest);
+  border-radius: var(--border-radius-l);
+  padding: var(--spacing-m);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-l);
+  align-items: center;
+  padding: var(--spacing-xl) var(--spacing-s) !important;
+}
+
+#hero-title {
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+#hero-cta {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-s);
+  align-items: center;
+}
+
+#hero-tools-suggestion {
+  display: flex;
+  column-gap: var(--spacing-s);
+}
+
+#keyboard-img {
+  width: 80%;
+  align-self: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-xs);
+  margin: var(--spacing-xs) 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-m);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-l);
+  width: 100vw;
+  background-color: var(--color-darkest);
+}
+
+footer > div {
+  width: 100%;
+  max-width: var(--size-desktop);
+  padding: var(--spacing-m);
+}
+
+/*
+  START TOOLS SECTION
+*/
+#tools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: var(--spacing-s);
+  row-gap: var(--spacing-m);
+}
+
+.tool {
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--spacing-s);
+  background-color: var(--color-darker);
+  border-radius: var(--border-radius-m);
+  padding: var(--spacing-s) var(--spacing-m) var(--spacing-m) var(--spacing-s);
+}
+
+.tool h3 {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+}
+
+.tool p {
+  font-size: var(--font-size-s);
+  line-height: 130%;
+  font-weight: var(--font-weight-medium);
+}
+
+.tool:hover {
+  background-color: var(--color-dark);
+}
+
+.tool-logo {
+  height: 75px;
+  border-radius: var(--border-radius-m);
+}
+
+.tool-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-xxs);
+}
+
+.tool-name {
+  padding-top: var(--spacing-xxs);
+}
+
+.tool-description {
+  color: var(--color-grey);
+}
+/*
+  END TOOLS SECTION
+*/
