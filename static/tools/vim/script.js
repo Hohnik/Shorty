@@ -17,9 +17,15 @@ fetch("./static/tools/vim/shortcuts.json")
       updateModifierKey(e);
       updateAllKeys(e);
 
-      document.getElementById("shortcut-info").innerHTML =
-        `<b>(${data?.[pressedKey.id]?.[window.activeModifier]?.["symbol"] || " ._."}) ${data?.[pressedKey.id]?.[window.activeModifier]?.["name"] || "... there is nothing here."}</b>
+      if (
+        data?.[pressedKey.id]?.[window.activeModifier]?.["symbol"] &&
+        data?.[pressedKey.id]?.[window.activeModifier]?.["name"] &&
+        data?.[pressedKey.id]?.[window.activeModifier]?.["info"]
+      ) {
+        document.getElementById("shortcut-info").innerHTML =
+          `<b>(${data?.[pressedKey.id]?.[window.activeModifier]?.["symbol"] || " ._."}) ${data?.[pressedKey.id]?.[window.activeModifier]?.["name"] || "... there is nothing here."}</b>
             <p>${data?.[pressedKey.id]?.[window.activeModifier]?.["info"] || ""}</p>` || "";
+      }
 
       window.activeKeys.push(pressedKey);
       window.activeKeys.forEach(
@@ -34,7 +40,6 @@ fetch("./static/tools/vim/shortcuts.json")
       updateAllKeys(e);
 
       pressedKey = document.getElementById(e.code);
-      pressedKey.innerHTML = "W";
       window.activeKeys = window.activeKeys.filter((key) => key !== pressedKey);
       pressedKey.style.backgroundColor = "var(--color-black)";
     });

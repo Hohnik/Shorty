@@ -1,9 +1,11 @@
 {% block navbar %}
 <nav>
-    <h1>Shorty</h1>
+    <h1 <!--hx-get="{{ url_for('home') }}" hx-target="html"--> Shorty</h1>
     <ul>
         <li>
-            <a href="#tools-section" class="link-button link-button-primary">Shortcuts</a>
+            <a href="#tools-section" class="link-button link-button-primary" style="cursor: pointer"
+                >Shortcuts</a
+            >
         </li>
         <li>
             <a href="#footer" class="link-button">Say thanks ♥️</a>

@@ -9,11 +9,16 @@ class Key extends LitElement {
     super();
     this.infoDisplay = document.getElementById("shortcut-info");
 
-    this.addEventListener("mouseover", (e) => {
-      this.infoDisplay.innerHTML =
-        `<b>(${this.shortcut?.[window.activeModifier]?.["symbol"] || " ._."}) ${this.shortcut?.[window.activeModifier]?.["name"] || "... there is nothing here."}</b>
+    this.addEventListener("mouseenter", (e) => {
+      if (
+        this.shortcut?.[window.activeModifier]?.["symbol"] &&
+        this.shortcut?.[window.activeModifier]?.["name"] &&
+        this.shortcut?.[window.activeModifier]?.["info"]
+      ) {
+        this.infoDisplay.innerHTML =
+          `<b>(${this.shortcut?.[window.activeModifier]?.["symbol"] || " ._."}) ${this.shortcut?.[window.activeModifier]?.["name"] || "... there is nothing here."}</b>
             <p>${this.shortcut?.[window.activeModifier]?.["info"] || ""}</p>` || "";
-
+      }
       window.activeKeys.push(this);
       window.activeKeys.forEach(
         (key) =>
@@ -22,11 +27,35 @@ class Key extends LitElement {
       );
     });
 
-    this.addEventListener("mouseout", (e) => {
+    this.addEventListener("mouseleave", (e) => {
       window.activeKeys = window.activeKeys.filter((key) => key !== this);
 
       this.style.backgroundColor = "var(--color-black)";
     });
+
+    if (
+      [
+        "ShiftLeft",
+        "ShiftRight",
+        "ControlLeft",
+        "ControlRight",
+        "AltLeft",
+        "AltRight",
+        "MetaLeft",
+        "MetaRight",
+      ].includes(this.id)
+    ) {
+      this.addEventListener("click", (e) => {
+        console.log("mod");
+        if (window.activeKeys.includes(this))
+          window.activeKeys = window.activeKeys.filter((key) => {
+            key !== this;
+          });
+        else window.activeKeys.push(this);
+        window.activeModifier = this.id;
+        this.style.backgroundColor = "white";
+      });
+    }
   }
 
   render() {
